@@ -1,0 +1,57 @@
+main {
+    margin: 8vh 0;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeCard {
+    margin: 25px 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+    width: 80%;
+}
+
+.leftSide {
+    background-color: whitesmoke;
+    position: absolute;
+    border: #2e8ea6 solid 1px;
+    height: 90%;
+    width: 45%;
+    top: 2%;
+    left: 2%;
+    box-shadow: -8px -8px 5px 0px #162d88;
+    border-radius: 12px;
+    transition: 0.8s;
+}
+
+.leftSide:hover,
+.rightSide:hover {
+    transition: 0.8s;
+    box-shadow: -16px -16px 5px 0px #2e8ea6;
+}
+
+hr {
+    width: 90%;
+    border-top: 2px solid #2e8ea6;
+}
+
+.rightSide {
+    background-color: whitesmoke;
+    border-radius: 12px;
+    position: absolute;
+
+    border: black solid 1px;
+    bottom: 2%;
+    right: 2%;
+
+    height: 90%;
+    width: 45%;
+    box-shadow: -8px -8px 5px 0px #162d88;
+
+    transition: 0.8s;
+}
+

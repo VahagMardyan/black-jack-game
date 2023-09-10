@@ -1,0 +1,36 @@
+main {
+  margin-top: 8vh;
+  width: 100%;
+  color: #000837;
+}
+
+.pose {
+  padding: 8vh 0;
+  margin-left: calc(50%);
+  transform: translateX(-50%);
+}
+
+.about {
+  height: max-content;
+  width: 80%;
+  padding: 5px;
+  border-radius: 12px;
+  border: solid rgb(58, 165, 180) 1px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 550px) {
+  .about p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .about p {
+    font-size: 24px;
+  }
+}
