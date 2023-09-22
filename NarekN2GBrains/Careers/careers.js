@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init('N4y8TR6D2fTpWOQDX'); //mardyan2003@gmail.com will be send (change it after)
+    emailjs.init('FIND IT IN YOUR "https://www.emailjs.com/" account'); //mardyan2003@gmail.com will be send (change it after)
 })();
 
 const main = document.querySelector('main');
@@ -46,8 +46,8 @@ function sendingEmail(event) {
             email: inputMail.value,
             message: inputArea.value,
         };
-        const serviceID = `service_8bhy8vt`; // change it for n2gbrain's email
-        const templateID = `template_p1fgrbf`; // change it for n2gbrain's email
+        const serviceID = `YOUR_SERVIDE_ID`; // change it for n2gbrain's email
+        const templateID = `YOUR_TEMPLATE_ID`; // change it for n2gbrain's email
         emailjs.send(serviceID, templateID, parameters)
             .then(() => {
                 const sound = document.createElement('audio');

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./cards/logo.png" type="image/x-icon">
+    <title>BlackJack</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" id="result" placeholder="result" readonly>
+
+        <div id="count">
+            <span class="span">gamer1:</span>
+            <span id="c1">0</span>
+            <hr>
+            <span class="span">gamer2:</span>
+            <span id="c2">0</span>
+        </div>
+
+        <div class="buttons">
+            <button class="reset">Reset Count</button>
+            <button class="again">Play Again</button>
+        </div>
+
+        <div class="gamer1">
+            <div class="a1"></div>
+            <div class="a1"></div>
+            <div class="a1"></div>
+            <div class="a1"></div>
+            <div class="a1"></div>
+            <div class="a1"></div>
+
+            <div class="box">
+                <p>gamer1</p>
+                <button class="btn">Change Turn</button>
+                <button class="btn1" id="btnG1"
+                    title="If you press this button, the game will be over in favor of your opponent, regardless of the points.">Stop</button>
+                <p>point :<span>0</span></p>
+            </div>
+
+        </div>
+
+        <div class="gamer2">
+            <div class="b1"></div>
+            <div class="b1"></div>
+            <div class="b1"></div>
+            <div class="b1"></div>
+            <div class="b1"></div>
+            <div class="b1"></div>
+
+            <div class="box">
+                <p>gamer2</p>
+                <button class="btn">Change Turn</button>
+                <button class="btn1" id="btnG2"
+                    title="If you press this button, the game will be over in favor of your opponent, regardless of the points.">Stop</button>
+                <p>point :<span>0</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

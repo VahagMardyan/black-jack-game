@@ -1,9 +1,5 @@
-// (function () {
-//   emailjs.init("vpFnP6jTSD_kDWeBC"); // Viktori emaili hamara
-// })();
-
 (function () {
-  emailjs.init('N4y8TR6D2fTpWOQDX'); //mardyan2003@gmail.com will be send (change it after)
+  emailjs.init('FIND IT IN YOUR "https://www.emailjs.com/" account');
 })();
 
 const main = document.querySelector('main');
@@ -52,11 +48,8 @@ const sendingEmail = (event) => {
       message: inputArea.value,
     };
 
-    // const serviceID = 'service_kgsri9r'; // Viktori email
-    // const templateID = 'template_i9c495j'; // Viktori email
-
-    const serviceID = `service_8bhy8vt`; // change it for n2gbrain's email
-    const templateID = `template_p1fgrbf`; // change it for n2gbrain's email
+    const serviceID = `YOUR SERVICE ID`;
+    const templateID = `YOUR TEMPLATE ID`;
 
     emailjs.send(serviceID, templateID, parametrs)
       .then(
