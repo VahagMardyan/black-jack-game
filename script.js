@@ -60,24 +60,24 @@ function chekingWinner() {
     if (score1 > 21 && score2 > 21) {
       result.value = "Both players bust! It's a tie";
     } else if (score1 > 21) {
-      result.value = 'Winner is gamer2';
+      result.value = 'The winner is gamer2';
       count2++;
       forCount2();
       updateC2();
     } else if (score2 > 21) {
-      result.value = 'Winner is gamer1';
+      result.value = 'The winner is gamer1';
       count1++;
       forCount1();
       updateC1();
     } else if (score1 > score2) {
-      result.value = 'Winner is gamer1';
+      result.value = 'The winner is gamer1';
       count1++;
       forCount1();
       updateC1();
     } else if (score1 === score2) {
       result.value = "It's a tie";
     } else {
-      result.value = 'Winner is gamer2';
+      result.value = 'The winner is gamer2';
       count2++;
       forCount2();
       updateC2();
@@ -134,7 +134,7 @@ gamer1Cards.forEach((el, i) => {
       score1 += cards[randomNum].value;
       point1.innerText = score1;
       if (score1 > 21) {
-        result.value = 'Game Over - Gamer 2 Wins';
+        result.value = 'Game Over - Gamer 2 Won!';
         count2++;
         forCount2();
         updateC2();
@@ -189,14 +189,14 @@ gamer2Cards.forEach((el, i) => {
       point2.innerText = score2;
 
       if (score2 > 21) {
-        result.value = 'Game Over - Gamer 1 Wins';
+        result.value = 'Game Over - Gamer 1 Won!';
         count1++;
         forCount1();
         updateC1();
         gameOver = true;
         return;
       } else if (score2 === 21) {
-        result.value = 'BlackJack Gamer 2 WON!';
+        result.value = 'BlackJack Gamer 2 Won!';
         count2++;
         forCount2();
         updateC2();
@@ -235,7 +235,7 @@ gamer1Btn.addEventListener('click', () => {
   gameOver = true;
   gamer1Btn.disabled=true;
   gamer2Btn.disabled=true;
-  result.value = 'Game Over - Gamer 2 Wins';
+  result.value = 'Game Over - Gamer 2 Won!';
   count2++;
   forCount2();
   updateC2();
@@ -248,7 +248,7 @@ gamer2Btn.addEventListener('click', () => {
   gamer1Btn.disabled=true;
   gamer2Btn.disabled=true;
   gameOver = true;
-  result.value = 'Game Over - Gamer 1 Wins';
+  result.value = 'Game Over - Gamer 1 Won!';
   count1++;
   forCount1();
   updateC1();
