@@ -125,3 +125,80 @@ hr {
     border: 1px solid black;
 }
 
+/* Landscape phones (max-height: 500px, min-width: 600px) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .gamer1,
+    .gamer2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .a1,
+    .b1 {
+        width: 60px;
+        height: 100px;
+        margin: 5px;
+        font-size: 24px;
+        background-size: 80px;
+    }
+
+    .a1:hover,
+    .b1:hover {
+        box-shadow: 6px 6px 8px 8px rgb(4, 65, 4);
+        transform: scale(1.1);
+    }
+
+    .btn, .btn1 {
+        font-size: 12px;
+    }
+
+    .box {
+        width: 100px;
+        height: 120px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    #result {
+        width: 280px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    #count {
+        width: 280px;
+        margin-top: 2px;
+        font-size: 14px;
+    }
+
+    #c1,
+    #c2,
+    .span {
+        font-size: 16px;
+    }
+
+    .buttons {
+        width: 280px;
+        gap: 5px;
+    }
+
+    .reset,
+    .again {
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .btn,
+    .btn1 {
+        height: 25px;
+        font-size: 16px;
+    }
+}
