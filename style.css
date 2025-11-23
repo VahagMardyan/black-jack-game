@@ -125,80 +125,100 @@ hr {
     border: 1px solid black;
 }
 
-/* Landscape phones (max-height: 500px, min-width: 600px) */
-@media (max-height: 500px) and (orientation: landscape) {
+@media (max-height: 412px) and (orientation: landscape) {
+
     .main {
-        justify-content: center;
-        padding: 10px;
+        justify-content: space-around;
+        padding: 8px;
+        gap: 8px;
     }
 
     .gamer1,
     .gamer2 {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
     }
 
     .a1,
     .b1 {
-        width: 60px;
-        height: 100px;
-        margin: 5px;
-        font-size: 24px;
-        background-size: 80px;
+        width: 55px;
+        height: 85px;
+        margin: 3px;
+        padding: 0;
+        font-size: 18px;
+        background-size: 65px;
+        border: 1px solid black;
     }
 
     .a1:hover,
     .b1:hover {
-        box-shadow: 6px 6px 8px 8px rgb(4, 65, 4);
-        transform: scale(1.1);
-    }
-
-    .btn, .btn1 {
-        font-size: 12px;
+        box-shadow: 4px 4px 6px 6px rgb(4, 65, 4);
+        transform: scale(1.08);
+        transition: 0.6s;
     }
 
     .box {
         width: 100px;
-        height: 120px;
-        margin: 5px;
-        font-size: 20px;
+        height: 85px;
+        margin: 3px;
+        padding: 0;
+        font-size: 15px;
+        border: 1px solid black;
     }
 
     #result {
-        width: 280px;
+        width: 250px;
         height: 30px;
-        font-size: 16px;
-        margin-top: 5px;
+        font-size: 14px;
+        margin-top: 3px;
+        padding: 3px;
+        border: 1px solid black;
     }
 
     #count {
-        width: 280px;
+        width: 250px;
+        height: 40px;
         margin-top: 2px;
-        font-size: 14px;
+        font-size: 12px;
+        border: 1px solid black;
+        padding: 2px;
     }
 
     #c1,
     #c2,
     .span {
-        font-size: 16px;
+        font-size: 13px;
+        font-weight: 600;
     }
 
     .buttons {
-        width: 280px;
-        gap: 5px;
+        width: 250px;
+        gap: 3px;
+        flex-shrink: 0;
     }
 
     .reset,
     .again {
-        height: 35px;
-        font-size: 16px;
+        width: 50%;
+        height: 32px;
+        font-size: 13px;
+        border: 1px solid black;
+        padding: 0;
     }
 
     .btn,
     .btn1 {
-        height: 25px;
-        font-size: 16px;
+        width: 100%;
+        height: 24px;
+        font-size: 13px;
+        padding: 0;
+    }
+
+    hr {
+        border: 0.5px solid black;
+        margin: 2px 0;
     }
 }
